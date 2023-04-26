@@ -56,15 +56,15 @@ exports.getAllTodos = async (req, res) => {
   }
 };
 
-exports.getTodoById = async (req, res) => {
-  try {
-    const todoDetails = await TodoList.findById();
-    return res.status(200).json({
-      message: todoDetails,
-    });
-  } catch (error) {
-    return res.status(404).json({
-      message: error.message,
-    });
-  }
-};
+// exports.getTodoById = async (req, res) => {
+//   try {
+//     const todoDetails = await TodoList.findById();
+//     return res.status(200).json({
+//       message: todoDetails,
+//     });
+//   } catch (error) {
+//     return res.status(404).json({
+//       message: error.message,
+//     });
+//   }
+// };

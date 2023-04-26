@@ -4,9 +4,9 @@ const Todo = mongoose.Schema({
   title: {
     type: String,
     require: true,
-    unique: true,
+    unique: false,
   },
-  Description: {
+  description: {
     type: String,
     require: true,
   },
@@ -14,4 +14,4 @@ const Todo = mongoose.Schema({
 
 const TodoList = mongoose.model("Todolist", Todo);
 
-model.exports = TodoList;
+module.exports = TodoList;
